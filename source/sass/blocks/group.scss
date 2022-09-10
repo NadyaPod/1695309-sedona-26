@@ -111,33 +111,35 @@
   &--experience {
     @media (min-width: $tablet-width) {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      column-gap: 12px;
+      grid-template-columns: repeat(2, minmax(250px, 310px));
+      justify-content: center;
+      column-gap: 40px;
       row-gap: 14px;
-      padding: 0 12px;
+      padding: 0 60px;
     }
 
     @media (min-width: $desktop-width) {
       display: grid;
-      grid-template-columns: 1fr 1fr 248px;
+      grid-template-columns: repeat(3, 1fr);
       column-gap: 30px;
-      padding: 14px 20px 18px 38px;
+      padding: 0 30px;
     }
   }
 
   &--visited {
     @media (min-width: $tablet-width) {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 16px 34px;
+      grid-template-columns: repeat(2, 250px);
+      justify-content: center;
+      gap: 16px 60px;
       padding: 0 64px;
     }
 
     @media (min-width: $desktop-width) {
       display: grid;
-      grid-template-columns: 1fr 1fr 170px 194px;
+      grid-template-columns: repeat(4, 1fr);
       padding: 32px 15px 32px 24px;
-      column-gap: 48px;
+      column-gap: 20px;
     }
   }
 
@@ -148,3 +150,4 @@
     }
   }
 }
+
