@@ -58,6 +58,34 @@
     }
   }
 
+  &--reset {
+    color: $black;
+    padding: 14px 32px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  &--more {
+    width: 150px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 9px 15px;
+    align-self: start;
+    color: #ffffff;
+    background-color: $brown;
+    border-radius: 4px;
+  }
+
+  &--subscribe {
+    // border-radius: 0 10px 10px 0;
+    // letter-spacing: -0.9px;
+    // font-size: 18px;
+    // line-height: 21px;
+    // cursor: pointer;
+  }
+
   &:disabled {
     background-color: $grey-second;
     cursor: auto;

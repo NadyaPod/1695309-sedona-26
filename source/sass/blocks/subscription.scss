@@ -1,0 +1,38 @@
+.subscription {
+  padding: 30px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 120px;
+  }
+}
+
+.subscription__text {
+  text-align: center;
+}
+
+.subscription__title {
+  margin-bottom: 24px;
+}
+
+.subscription__description {
+  margin-bottom: 20px;
+}
+
+.subscription__form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.subscription__input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.subscription__button {
+  width: 100%;
+}
+

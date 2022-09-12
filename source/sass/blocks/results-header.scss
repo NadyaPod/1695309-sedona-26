@@ -1,0 +1,18 @@
+.results-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 40px 0 20px;
+  border-top: 1px solid $grey-second;
+
+  @media (max-width: $mobile-only) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.results-header__title {
+  font-size: 21px;
+  line-height: 26px;
+}

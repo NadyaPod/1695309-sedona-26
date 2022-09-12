@@ -1,0 +1,16 @@
+.fieldset {
+  padding: 30px 10px;
+  border: 1px solid $grey-active;
+  border-radius: 4px;
+}
+
+.fieldset__title {
+  font-weight: 700;
+}
+
+.fieldset__list {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

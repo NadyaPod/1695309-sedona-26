@@ -1,0 +1,34 @@
+.range {
+  position: relative;
+  top: 15px;
+  left: 2px;
+  height: 4px;
+  background-color: $grey;
+  margin-bottom: 20px;
+}
+
+.range__bar {
+  position: absolute;
+  height: 4px;
+  background-color: $black-light-opacity;
+}
+
+.range__toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 5px;
+  background: $black-light-second;
+  cursor: pointer;
+
+  &--min {
+    top: -8px;
+    left: 0;
+  }
+
+  &--max {
+    top: -8px;
+    right: -10px;
+  }
+}

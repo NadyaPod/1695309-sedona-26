@@ -1,0 +1,43 @@
+.view {
+  @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.view__item {
+  margin-right: 8px;
+  margin-bottom: 5px;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+.view__button {
+  display: block;
+  width: 48px;
+  height: 48px;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  &--tile {
+    background-image: url("../img/decor-icons/tile.svg");
+  }
+
+  &--slideshow {
+    background-image: url("../img/decor-icons/slideshow.svg");
+  }
+
+  &--list {
+    background-image: url("../img/decor-icons/list.svg");
+  }
+
+  &--active,
+  &:hover,
+  &:active {
+    border-color: $black;
+  }
+}
