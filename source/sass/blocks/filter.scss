@@ -2,11 +2,12 @@
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
     padding: 0 60px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 120px;
+    padding: 0 72px;
   }
 }
 
@@ -14,6 +15,11 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
 }
 
 .filter__button-wrap {
@@ -21,4 +27,9 @@
   flex-direction: column;
   gap: 20px;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    align-self: center;
+  }
 }

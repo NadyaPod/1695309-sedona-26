@@ -4,15 +4,22 @@
   gap: 20px;
   align-items: center;
   border-top: 1px solid $grey-second;
-  padding: 29px 20px 16px;
+  padding: 30px 0;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .pagination__list {
   @include list-reset;
 
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    margin-right: auto;
+  }
 }
 
 .pagination__item {
@@ -21,6 +28,11 @@
   margin-right: 8px;
   margin-bottom: 8px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    min-width: 60px;
+    min-height: 60px;
+  }
 }
 
 .pagination__link {
@@ -64,4 +76,10 @@
 
 .pagination__results-number {
   width: 160px;
+}
+
+.pagination__results-label {
+  @media (min-width: $tablet-width) {
+    margin-right: 20px;
+  }
 }

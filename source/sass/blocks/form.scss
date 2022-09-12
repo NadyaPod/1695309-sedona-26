@@ -54,6 +54,17 @@
   }
 }
 
+.form__button {
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    padding: 18px 26px 14px 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 384px;
+  }
+}
+
 .form__required-text {
   position: relative;
   top: 2px;

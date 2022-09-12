@@ -1,8 +1,8 @@
 .option {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 16px 10px;
-  padding: 20px;
+  gap: 16px 20px;
+  padding: 0 0 20px 0;
 }
 
 .option__image-link {
@@ -114,9 +114,9 @@
 
 .option__score {
   width: 100%;
-  padding: 9px 15px;
+  padding: 9px 10px;
   align-self: start;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;

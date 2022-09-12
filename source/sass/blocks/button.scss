@@ -21,15 +21,6 @@
     @media (max-width: $mobile-only) {
       width: 100%;
     }
-
-    @media (min-width: $tablet-width) {
-      width: 324px;
-      padding: 18px 26px 14px 16px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 384px;
-    }
   }
 
   &--modal {
@@ -76,14 +67,6 @@
     color: #ffffff;
     background-color: $brown;
     border-radius: 4px;
-  }
-
-  &--subscribe {
-    // border-radius: 0 10px 10px 0;
-    // letter-spacing: -0.9px;
-    // font-size: 18px;
-    // line-height: 21px;
-    // cursor: pointer;
   }
 
   &:disabled {

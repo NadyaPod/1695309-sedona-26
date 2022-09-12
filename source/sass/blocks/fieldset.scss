@@ -2,6 +2,10 @@
   padding: 30px 10px;
   border: 1px solid $grey-active;
   border-radius: 4px;
+
+  @media (min-width: $tablet-width) {
+    align-self: start;
+  }
 }
 
 .fieldset__title {
