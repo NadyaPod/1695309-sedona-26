@@ -3,4 +3,8 @@
   margin: 0;
   font-family: $main-font;
   background-color: $grey-bg;
+
+  &--no-scroll {
+    overflow-y: hidden;
+  }
 }

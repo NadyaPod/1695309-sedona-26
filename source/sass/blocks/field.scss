@@ -49,6 +49,7 @@
   background-color: $grey-bg;
   border-radius: 4px;
   cursor: pointer;
+  transition: all 0.2s ease;
 
   &--radio {
     border-radius: 50%;

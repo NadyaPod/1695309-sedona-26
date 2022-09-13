@@ -10,6 +10,7 @@
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
+  transition: all 0.3s ease;
 
   &--search {
     padding: 14px 20px 18px;

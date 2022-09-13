@@ -31,4 +31,12 @@
     top: -8px;
     right: -10px;
   }
+
+  &:hover {
+    box-shadow: 0 2px 14px 0 $grey-opacity;
+  }
+
+  &:active {
+    outline: 2px solid #83b3d3;
+  }
 }

@@ -22,6 +22,13 @@
   @include list-reset;
   position: relative;
 
+  @media (max-width: $mobile-only) {
+    top: 0;
+    height: 100vh;
+    background-color: $blue;
+    transition: all 0.4s ease-out;
+  }
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -56,6 +63,11 @@
   border-bottom: 1px solid rgba($black, 0.2);
   border-top: 1px solid rgba($white, 0.2);
   cursor: pointer;
+  transition: all 0.2s ease;
+
+  @media (max-width: $mobile-only) {
+    padding: 60px 40px;
+  }
 
   @media (min-width: $tablet-width) {
     height: 100%;
@@ -111,7 +123,8 @@
 
 @media (max-width: $mobile-only) {
   .navigation--closed .navigation__list {
-    display: none;
+    top: -700px;
+    height: 0;
   }
 
   .navigation--nojs .navigation__toggle {
@@ -120,10 +133,16 @@
 
   .navigation--nojs .navigation__list {
     display: block;
+    top: 0;
+    height: 100%;
   }
 
   .navigation--nojs .navigation {
     position: static;
+  }
+
+  .navigation--nojs .navigation__link {
+    padding: 16px 40px 12px;
   }
 }
 
@@ -133,6 +152,7 @@
   width: 23px;
   height: 4px;
   background-color: $blue;
+  transition: all 0.4s ease;
 }
 
 .navigation--closed .navigation__toggle-dash::before {
@@ -143,6 +163,7 @@
   width: 23px;
   height: 4px;
   background-color: $blue;
+  transition: all 0.4s ease;
 }
 
 .navigation--closed .navigation__toggle-dash::after {
@@ -153,6 +174,7 @@
   width: 23px;
   height: 4px;
   background-color: $blue;
+  transition: all 0.4s ease;
 }
 
 .navigation--opened .navigation__list::after {
@@ -171,6 +193,7 @@
   height: 4px;
   background-color: $white;
   transform: rotate(45deg);
+  transition: all 0.5s ease;
 }
 
 .navigation--opened .navigation__toggle-dash::after {

@@ -13,6 +13,7 @@
   color: $white;
   background-color: $blue;
   padding: 12px;
+  transition: all 0.2s ease;
 
   &:hover {
     background-color: $blue-hover;
